@@ -1,23 +1,27 @@
-[Self-Service.js](https://github.com/SMU-CS-and-Math-Society/Self-Service)
+[Self-Service.js](https://github.com/DMouse10462/Self-Service)
 ===============
 
-> Node.js API for Saint Mary's University Self-Service.
+> Node.js API for Youngstown State University's Self-Service Banner.
 
 -----
+
+## Fork Information
+
+This is a fork of the Saint Mary's University repository to accomodate the pages at YSU. Much of the functionality is still broken, and features will generally only be implemented on an as-needed basis. All credentials-based methods are untested and probably broken. Contributions are welcome.
 
 ## Installation
 
 ```bash
-npm install self-service-banner --save
+npm install github:DMouse10462/Self-Service --save
 ```
 
-## Usage
+## Usage - NOT TESTED
 
 ```javascript
 //
 var selfService = require("self-service-banner");
 
-// Login Credentials for Authentication
+// Login Credentials for Authentication - UNIMPLEMENTED
 var creds = {
    "username": "A-Number",
    "password": "123567890"
@@ -26,7 +30,7 @@ var creds = {
 // Create your connection instance.
 var s = new selfService;
 
-// Authenticate your connection by logging in with your credentials.
+// Authenticate your connection by logging in with your credentials. - UNIMPLEMENTED
 s.login({"username": creds.username, "password": creds.password }, function(error, response, localService) {
     if (!error) {
       // Successful
